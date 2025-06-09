@@ -1,7 +1,10 @@
 
+# ENCRYPTION & DECRYPTION
+
 letters= 'abcdefghijklmnopqrstuvwxyz'
 num_letters = len(letters)
 
+#Encryption
 def encrypt(plaintext,key):
     ciphertext= ''
     for letter in plaintext:
@@ -17,6 +20,8 @@ def encrypt(plaintext,key):
                 ciphertext += letters[new_index]
     return ciphertext
 
+
+# Decryption
 def decrypt(ciphertext,key):
     plaintext= ''
     for letter in ciphertext:
@@ -41,6 +46,7 @@ user_input = input('e/d: ').lower()
 print()
 
 
+#Encryption and decryption ststements
 if user_input =='e':
     print('ENCRYPTION MODE SELECTED')
     print()
